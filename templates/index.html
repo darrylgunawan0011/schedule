@@ -168,9 +168,9 @@
     <br><br>
 
     <!-- Clear Schedule Button -->
-    <form action="/clear_schedule" method="post">
+    <form action="/clear_schedule" method="post" id="clearScheduleForm">
         <div class="centered-button-container">
-            <button type="submit">Clear Schedule</button>
+            <button type="button" onclick="confirmClear()">Clear Schedule</button>
         </div>
     </form>
     
@@ -181,6 +181,16 @@
             window.location.href = "/download_excel";
         });
     </script> -->
+
+    <script type="text/javascript">
+        function confirmClear() {
+            var confirmation = confirm("Are you sure you want to clear the schedule?");
+            if (confirmation) {
+                // If confirmed, submit the form
+                document.getElementById("clearScheduleForm").submit();
+            }
+        }
+    </script>
 
     <script>
         document.getElementById("downloadPdfButton").addEventListener("click", function() {
