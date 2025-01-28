@@ -35,15 +35,15 @@ def generate_empty_schedule():
     return {
         "Name": [
             "Sally", "Mihiro", "Darryl", "Minerva", "Edwin", "Shawn",
-            "Kenneth", "Dewi", "Stephanie", "Fuyuka", "Regine"
+            "Kenneth", "Dewi", "Stephanie", "Fuyuka", "Kai", "Regine"
         ],
-        "Wednesday": [""] * 11,
-        "Thursday": [""] * 11,
-        "Friday": [""] * 11,
-        "Saturday": [""] * 11,
-        "Sunday": [""] * 11,
-        "Monday": [""] * 11,
-        "Tuesday": [""] * 11
+        "Wednesday": [""] * 12,
+        "Thursday": [""] * 12,
+        "Friday": [""] * 12,
+        "Saturday": [""] * 12,
+        "Sunday": [""] * 12,
+        "Monday": [""] * 12,
+        "Tuesday": [""] * 12
     }
 
 @app.route('/', methods=['GET', 'POST'])
