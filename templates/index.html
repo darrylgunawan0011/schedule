@@ -75,7 +75,8 @@
                         <input type="checkbox" name="Lunch_Thursday_{{ name }}" {% if 'Lunch' in thu %} checked {% endif %}> Lunch
                         <br>
                         <select name="Other_Shifts_Thursday_{{ name }}">
-                            <option value="" {% if thu == '' or 'N/A' in thu %} selected {% endif %}></option>
+                            <option value="======" {% if 'Lunch' not in thu and '======' in thu %} selected {% endif %}>==========</option>
+                            <option value="" {% if 'Lunch' in thu %} selected {% endif %}></option>
                             <option value="Dinner" {% if 'Dinner' in thu %} selected {% endif %}>Dinner</option>
                             <option value="Runner" {% if 'Runner' in thu %} selected {% endif %}>Runner</option>
                             <option value="BB" {% if 'BB' in thu %} selected {% endif %}>BB</option>
@@ -91,7 +92,8 @@
                         <input type="checkbox" name="Lunch_Friday_{{ name }}" {% if 'Lunch' in fri %} checked {% endif %}> Lunch
                         <br>
                         <select name="Other_Shifts_Friday_{{ name }}">
-                            <option value="" {% if fri == '' or 'N/A' in fri %} selected {% endif %}></option>
+                            <option value="======" {% if 'Lunch' not in fri and '======' in fri %} selected {% endif %}>==========</option>
+                            <option value="" {% if 'Lunch' in fri %} selected {% endif %}></option>
                             <option value="Dinner" {% if 'Dinner' in fri %} selected {% endif %}>Dinner</option>
                             <option value="Runner" {% if 'Runner' in fri %} selected {% endif %}>Runner</option>
                             <option value="BB" {% if 'BB' in fri %} selected {% endif %}>BB</option>
@@ -107,7 +109,8 @@
                         <input type="checkbox" name="Lunch_Saturday_{{ name }}" {% if 'Lunch' in sat %} checked {% endif %}> Lunch
                         <br>
                         <select name="Other_Shifts_Saturday_{{ name }}">
-                            <option value="" {% if sat == '' or 'N/A' in sat %} selected {% endif %}></option>
+                            <option value="======" {% if 'Lunch' not in sat and '======' in sat %} selected {% endif %}>==========</option>
+                            <option value="" {% if 'Lunch' in sat %} selected {% endif %}></option>
                             <option value="Dinner" {% if 'Dinner' in sat %} selected {% endif %}>Dinner</option>
                             <option value="Runner" {% if 'Runner' in sat %} selected {% endif %}>Runner</option>
                             <option value="BB" {% if 'BB' in sat %} selected {% endif %}>BB</option>
@@ -123,7 +126,8 @@
                         <input type="checkbox" name="Lunch_Sunday_{{ name }}" {% if 'Lunch' in sun %} checked {% endif %}> Lunch
                         <br>
                         <select name="Other_Shifts_Sunday_{{ name }}">
-                            <option value="" {% if sun == '' or 'N/A' in sun %} selected {% endif %}></option>
+                            <option value="======" {% if 'Lunch' not in sun and '======' in sun %} selected {% endif %}>==========</option>
+                            <option value="" {% if 'Lunch' in sun %} selected {% endif %}></option>
                             <option value="Dinner" {% if 'Dinner' in sun %} selected {% endif %}>Dinner</option>
                             <option value="Runner" {% if 'Runner' in sun %} selected {% endif %}>Runner</option>
                             <option value="BB" {% if 'BB' in sun %} selected {% endif %}>BB</option>
@@ -139,7 +143,8 @@
                         <input type="checkbox" name="Lunch_Monday_{{ name }}" {% if 'Lunch' in mon %} checked {% endif %}> Lunch
                         <br>
                         <select name="Other_Shifts_Monday_{{ name }}">
-                            <option value="" {% if mon == '' or 'N/A' in mon %} selected {% endif %}></option>
+                            <option value="======" {% if 'Lunch' not in mon and '======' in mon %} selected {% endif %}>==========</option>
+                            <option value="" {% if 'Lunch' in mon %} selected {% endif %}></option>
                             <option value="Dinner" {% if 'Dinner' in mon %} selected {% endif %}>Dinner</option>
                             <option value="Runner" {% if 'Runner' in mon %} selected {% endif %}>Runner</option>
                             <option value="BB" {% if 'BB' in mon %} selected {% endif %}>BB</option>
@@ -155,7 +160,8 @@
                         <input type="checkbox" name="Lunch_Tuesday_{{ name }}" {% if 'Lunch' in tue %} checked {% endif %}> Lunch
                         <br>
                         <select name="Other_Shifts_Tuesday_{{ name }}">
-                            <option value="" {% if tue == '' or 'N/A' in tue %} selected {% endif %}></option>
+                            <option value="======" {% if 'Lunch' not in tue and '======' in tue %} selected {% endif %}>==========</option>
+                            <option value="" {% if 'Lunch' in tue %} selected {% endif %}></option>
                             <option value="Dinner" {% if 'Dinner' in tue %} selected {% endif %}>Dinner</option>
                             <option value="Runner" {% if 'Runner' in tue %} selected {% endif %}>Runner</option>
                             <option value="BB" {% if 'BB' in tue %} selected {% endif %}>BB</option>
