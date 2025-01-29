@@ -37,13 +37,13 @@ def generate_empty_schedule():
             "Sally", "Mihiro", "Darryl", "Minerva", "Edwin", "Shawn",
             "Kenneth", "Dewi", "Stephanie", "Fuyuka", "Kai", "Regine"
         ],
-        "Wednesday": [""] * 12,
-        "Thursday": [""] * 12,
-        "Friday": [""] * 12,
-        "Saturday": [""] * 12,
-        "Sunday": [""] * 12,
-        "Monday": [""] * 12,
-        "Tuesday": [""] * 12
+        "Wednesday": ["=========="] * 12,
+        "Thursday": ["=========="] * 12,
+        "Friday": ["=========="] * 12,
+        "Saturday": ["=========="] * 12,
+        "Sunday": ["=========="] * 12,
+        "Monday": ["=========="] * 12,
+        "Tuesday": ["=========="] * 12
     }
 
 @app.route('/', methods=['GET', 'POST'])
