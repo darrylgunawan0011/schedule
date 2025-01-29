@@ -58,7 +58,8 @@
                         <input type="checkbox" name="Lunch_Wednesday_{{ name }}" {% if 'Lunch' in wed %} checked {% endif %}> Lunch
                         <br>
                         <select name="Other_Shifts_Wednesday_{{ name }}">
-                            <option value="" {% if wed == '' or 'N/A' in wed %} selected {% endif %}></option>
+                            <option value="======" {% if wed == '======' in wed %} selected {% endif %}></option>
+                            <option value="" {% if '' or 'N/A' in wed %} selected {% endif %}></option>
                             <option value="Dinner" {% if 'Dinner' in wed %} selected {% endif %}>Dinner</option>
                             <option value="Runner" {% if 'Runner' in wed %} selected {% endif %}>Runner</option>
                             <option value="BB" {% if 'BB' in wed %} selected {% endif %}>BB</option>
