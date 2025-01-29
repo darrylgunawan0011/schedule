@@ -37,7 +37,7 @@ def generate_empty_schedule():
             "Sally", "Mihiro", "Darryl", "Minerva", "Edwin", "Shawn",
             "Kenneth", "Dewi", "Stephanie", "Fuyuka", "Kai", "Regine"
         ],
-        "Wednesday": ["=========="] * 12,
+        "Wednesday": ["aaa"] * 12,
         "Thursday": ["=========="] * 12,
         "Friday": ["=========="] * 12,
         "Saturday": ["=========="] * 12,
